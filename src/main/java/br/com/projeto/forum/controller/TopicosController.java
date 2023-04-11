@@ -21,10 +21,13 @@ public class TopicosController {
     private TopicoRepository repository;
 
     @GetMapping
-    public List<TopicoDTO> findAll(){
-        List<Topico> topicos = repository.findAll();
-        return TopicoDTO.converter(topicos);
+    public List<TopicoDTO> findAll(String nomeCurso) {
+        if (nomeCurso == null) {
+            List<Topico> topicos = repository.findAll();
+            return TopicoDTO.converter(topicos);
+        } else {
+            List<Topico> topicos = repository.findByCursoNome(nomeCurso);
+            return TopicoDTO.converter(topicos);
+        }
     }
-
-
 }
