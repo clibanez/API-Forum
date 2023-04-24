@@ -1,12 +1,12 @@
 package br.com.projeto.forum.services.exception;
 
-public class NotFoundException extends RuntimeException {
+public class ObjectNotFoundException extends RuntimeException {
 
-    public NotFoundException(String message) {
+    public ObjectNotFoundException(String message) {
         super(message);
     }
 
-    public NotFoundException(String message, Throwable cause) {
+    public ObjectNotFoundException(String message, Throwable cause) {
         super(message, cause);
     }
 
