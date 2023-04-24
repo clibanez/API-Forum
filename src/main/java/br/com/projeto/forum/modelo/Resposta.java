@@ -23,5 +23,6 @@ public class Resposta {
     private LocalDateTime dataCriacao;
     @ManyToOne
     private Usuario autor;
+
     private Boolean solucao = false;
 }
