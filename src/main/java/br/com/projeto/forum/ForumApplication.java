@@ -1,4 +1,4 @@
-package br.com.projeto.forum;
+package br.com.projeto.forum.services;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
